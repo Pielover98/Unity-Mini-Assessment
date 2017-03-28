@@ -17,7 +17,19 @@ public class Restart : MonoBehaviour
 
 	if(Input.GetButton("Restart"))
         {
+            Application.LoadLevel(1);
+        }
+    if(Input.GetButton("Quit"))
+        {
+            Application.Quit();
+        }
+    if(Input.GetButton("MainMenu"))
+        {
             Application.LoadLevel(0);
+        }
+    if(Input.GetButton("LevelMenu"))
+        {
+            Application.LoadLevel(5);
         }
 	}
 }
