@@ -89,9 +89,11 @@
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Respawn.cs" />
+    <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\SpinningObsticle.cs" />
+    <Compile Include="Assets\Scripts\SpinningPinWheelObsticle.cs" />
     <Compile Include="Assets\Scripts\StayOnPlatform.cs" />
-    <Compile Include="Assets\Scripts\Teleporter.cs" />
+    <Compile Include="Assets\Scripts\SwitchLvl.cs" />
     <Compile Include="Assets\Scripts\TrapDoor.cs" />
     <Compile Include="Assets\Scripts\Turret.cs" />
   </ItemGroup>

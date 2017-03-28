@@ -24,14 +24,13 @@ public class Turret : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        //Rotate turret to look at player.
+   
         Vector3 relativePos = target.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(relativePos);
         rotation.x = 0;
         rotation.z = 0;
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * turretSpeed);
 
-        //Fire at player when in range.
         distance = Vector3.Distance(transform.position, target.position);
 
         if (distance < range)

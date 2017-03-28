@@ -44,7 +44,10 @@ public class PlayerHealth : MonoBehaviour
         {
             gameOver = true;
         }
-
+        if (gameOver == true)
+        {
+            Application.LoadLevel(2);
+        }
 
     }
 }
