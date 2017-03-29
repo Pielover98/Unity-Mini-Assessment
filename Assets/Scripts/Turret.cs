@@ -42,6 +42,10 @@ public class Turret : MonoBehaviour {
                 launchLavaBall();
             }
         }
+        if(Input.GetButton("Quit"))
+        {
+            Application.Quit();
+        }
     }
 
     void launchLavaBall()
