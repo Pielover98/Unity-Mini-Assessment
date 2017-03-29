@@ -22,5 +22,9 @@ public class WinMenu : MonoBehaviour
         {
             Application.LoadLevel(0);
         }
-	}
+        if (Input.GetButton("LevelMenu"))
+        {
+            Application.LoadLevel(5);
+        }
+    }
 }

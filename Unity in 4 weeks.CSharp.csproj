@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
+    <Compile Include="Assets\Scripts\CameraMouse.cs" />
     <Compile Include="Assets\Scripts\DestroyLavaBall.cs" />
     <Compile Include="Assets\Scripts\DestroyRespawn.cs" />
     <Compile Include="Assets\Scripts\LevelMenu.cs" />
