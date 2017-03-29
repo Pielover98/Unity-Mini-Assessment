@@ -91,7 +91,6 @@
     <Compile Include="Assets\Scripts\ObsticleSpawnerTrack.cs" />
     <Compile Include="Assets\Scripts\PlatformMove.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\SizzleSound.cs" />
     <Compile Include="Assets\Scripts\SpinningObsticle.cs" />
@@ -100,6 +99,7 @@
     <Compile Include="Assets\Scripts\SwitchLvl.cs" />
     <Compile Include="Assets\Scripts\TrapDoor.cs" />
     <Compile Include="Assets\Scripts\Turret.cs" />
+    <Compile Include="Assets\Scripts\UpDownPlatformMove.cs" />
     <Compile Include="Assets\Scripts\Win.cs" />
     <Compile Include="Assets\Scripts\WinMenu.cs" />
   </ItemGroup>
