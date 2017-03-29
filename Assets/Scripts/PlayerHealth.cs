@@ -8,25 +8,37 @@ public class PlayerHealth : MonoBehaviour
     public float lives = 5.0f;
     public bool dead = false;
     public bool gameOver = false;
-
+    private AudioSource audioSource;
+    public AudioClip Sizzle;
 
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Destroy")
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = Sizzle;
+            audioSource.Play();
             dead = true;
+
         }
     }
     void OnCollisionEnter(Collision ball)
     {
         if(ball.gameObject.tag == "LavaBall")
         {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.clip = Sizzle;
+            audioSource.Play();
             dead = true;
         }
     }
-       
-	// use this for initialization
-	void Start ()
+    void OnGUI()
+    {
+        GUILayout.Label("Lives: " + lives);
+    }
+
+    // use this for initialization
+    void Start ()
     {
 		
 	}
